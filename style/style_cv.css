@@ -1,0 +1,171 @@
+:root{
+    --color-primario: #000000;
+    --color-secundario: #22D4FD;
+    --color-terciario: #F6F6F6;
+    --fuente-montserrat: 'Montserrat', sans-serif;
+    --fuente-krona: 'Krona One', sans-serif;
+    --font--size-cv: 17px; 
+}
+
+.border__line{
+    width: 100%;
+    border: 4px solid;
+    border-color: #22D4FD #000000 #000000 #000000;
+}
+
+.border__line2{
+    margin: -20px;
+    width: 100%;
+    border: 2px solid;
+    border-color: #22D4FD #000000 #000000 #000000;
+}
+
+.presentacion__border{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    border-radius: 20px;
+    /* border: 2px solid var(--color-secundario); */
+    padding: 10px 20px;
+    width: 650px;
+}
+
+.presentacion__contenido__titulo__curriculum{
+    font-size: 36px;
+    font-family: var(--fuente-krona);
+    text-align: center;
+    color: var(--color-secundario); 
+
+}
+
+.presentacion__contenido__texto__curriculum{
+    margin: 20px;
+    font-size: var(--font--size-cv);
+    font-family: var(--fuente-montserrat);
+    text-align: center;
+}
+
+.presentacion__contenido__texto__linkedin{
+    color: var(--color-secundario);
+    text-decoration: none;
+}
+
+.presentacion__contenido__texto__linkedin:hover{
+    color: #1caaca;
+}
+
+
+.presentacion__contenido__titulo2{
+    font-size: 30px;
+    font-family: var(--fuente-krona);
+    text-align: center;
+    color: var(--color-secundario); 
+}
+
+.presentacion__contenido__texto__curriculum2{
+    font-size: var(--font--size-cv);
+    font-family: var(--fuente-krona);
+}
+
+.habilidades{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* align-items: stretch; */
+}
+
+.presentacion__contenido__texto__habilidades{
+    font-size: var(--font--size-cv);
+    font-family: var(--fuente-montserrat);
+}
+
+.presentacion__contenido__texto__habilidades_center{
+    text-align: center;
+}
+
+.presentacion__contenido__texto__habilidades_end{
+    text-align: end;
+}
+
+.presentacion__contenido__texto__experiencia__laboral{
+    font-size: var(--font--size-cv);
+    font-family: var(--fuente-montserrat);
+}
+
+.experiencia__laboral__color{
+    font-size: var(--font--size-cv);
+    font-family: var(--fuente-montserrat);
+    color: var(--color-secundario);
+}
+
+.experiencia__laboral__color__end1{
+    margin-left: 300px;
+}
+.experiencia__laboral__color__end{
+    margin-left: 280px;
+}
+.experiencia__laboral__1{
+    padding: 5px;
+    font-family: var(--fuente-montserrat);
+    color: var(--color-terciario);
+}
+
+.experiencia__laboral__lugar{
+    padding: 5px 0px;
+}
+.experiencia__laboral__detalle{
+    padding: 5px 20px;
+}
+
+
+
+.educacion_lugar{
+    padding: 5px;
+    font-size: var(--font--size-cv);
+    font-family: var(--fuente-krona);
+}
+
+.imagen_principal2{
+    width: 30%;
+}
+
+@media (max-width: 1286px){
+    .header{
+        padding: 10%;  
+    }
+    .header__menu{
+        justify-content: center;
+    }
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    
+    .presentacion__contenido{
+        width: auto;
+    }
+
+    .presentacion__border{
+        width: auto;
+    }
+}
+
+@media(max-width: 535px){
+    .presentacion__border{
+        width: 400px;
+    }
+}
+
+@media(max-width: 460px){
+    .presentacion__border{
+        width: 350px;
+    }
+}
+
+@media(max-width: 395px){
+    .presentacion__border{
+        width: 320px;
+    }
+}
